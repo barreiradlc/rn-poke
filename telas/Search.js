@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 import { Button, Header, Item, Icon, Input} from 'native-base';
+import Pokeloader from './PokeLoader';
+import SearchBody from './SearchBody';
 
 /* variáveis */
 /* var fundo = require('./assets/landing.jpg') */
@@ -8,23 +10,24 @@ import { Button, Header, Item, Icon, Input} from 'native-base';
 export default class Search extends React.Component {
   state = {
     pokemonSearch: '',
+    onCall: false,
   }
   
   pokeSearch = () => {
 
   }
-  /* renderBody = () => {
-    if (this.state.onCall === ) {
+  renderBody = () => {
+    if (this.state.onCall) {
       return(
-
+        <Pokeloader />
       )
     }
     else {
       return(
-
+        <SearchBody />
       )
     }
-  } */
+  } 
   
   render() {
     return (
@@ -56,7 +59,7 @@ export default class Search extends React.Component {
   const styles = StyleSheet.create({  
     /* header */
     header: {
-      marginTop: 20,
+      marginTop: 25,
     },
     
     /* containers */
