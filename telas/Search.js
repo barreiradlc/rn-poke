@@ -10,7 +10,7 @@ import SearchBody from './SearchBody';
 export default class Search extends React.Component {
   state = {
     pokemonSearch: '',
-    onCall: false,
+    onCall: true,
   }
   
   pokeSearch = () => {
@@ -64,7 +64,7 @@ export default class Search extends React.Component {
     
     /* containers */
     container: {
-      flex: 1,
+    flex: 1,
       
     },
   });
