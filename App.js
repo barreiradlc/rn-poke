@@ -9,12 +9,12 @@ import Search from './telas/Search';
 
 export default class App extends React.Component {
   state = {
-    currentScreen: "search" 
+    currentScreen: "landing" 
   }
   renderScreen = () => {
     if(this.state.currentScreen === "landing") {
       return(
-        <Landing />
+        <Landing switchScreen={this.switchScreen} />
       )
     }
     else if(this.state.currentScreen === "search") {
@@ -23,6 +23,12 @@ export default class App extends React.Component {
       )
     }
   }
+
+  switchScreen = (currentScreen) => {
+    this.setState({currentScreen})
+  }
+
+
 
   render() {
     return (

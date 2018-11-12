@@ -22,7 +22,7 @@ export default class App extends React.Component {
             <Button
               block={true}
               style={styles.bot}
-              onPress={() => {}}
+              onPress={() => this.props.switchScreen("search")}
               
             >
             <Text style={styles.botTexto}>Vamula</Text>
