@@ -10,7 +10,7 @@ export default class App extends React.Component {
   render() {
     return (
       
-      <View style={styles.container}>
+<View style={styles.container}>
         <ImageBackground 
           source={fundo}
           style={styles.estiloFundo}
@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  
   view: {
     flex: 1,
     flexDirection: 'column',
