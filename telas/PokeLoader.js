@@ -22,11 +22,13 @@ class Pokeloader extends React.Component{
 }
 const styles = StyleSheet.create({  
     fundo: {
-        flex: 2,
-        width: '100%', 
-        height: '100%',
+        
+        width: 350, 
+        height: 350,
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection: 'column',
+
     },
 });
 

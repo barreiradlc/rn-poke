@@ -3,7 +3,7 @@ import { StyleSheet, View, Text } from 'react-native';
 import { Button, Header, Item, Icon, Input} from 'native-base';
 import Pokeloader from './PokeLoader';
 import SearchBody from './SearchBody';
-
+import axios from 'axios';
 /* variáveis */
 /* var fundo = require('./assets/landing.jpg') */
 
@@ -14,7 +14,12 @@ export default class Search extends React.Component {
   }
   
   pokeSearch = () => {
+    this.setState({onCall: true});
 
+    axios.get("https://pokeapi.co/api/v2/pokemon/" +this.state.pokemonSearch.toLowerCase())
+    .then(function(response){
+      console.log(response.data)
+    })
   }
   renderBody = () => {
     if (this.state.onCall) {
