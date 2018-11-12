@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, View, Text } from 'react-native';
+import { Button, Header } from 'native-base';
 
 /* variáveis */
 /* var fundo = require('./assets/landing.jpg') */
@@ -7,19 +8,29 @@ import { StyleSheet, View, Text } from 'react-native';
 export default class Search extends React.Component {
   render() {
     return (
-      <View style={styles.container}>                
-            <Text>Search</Text>        
+      <View >                
+      <Header
+      searchBar
+      rounded
+      >
+      
+      
+      </Header>
+      <View style={styles.container}>
+      <Text>Search</Text>        
       </View>
-    );
+      </View>
+      );
+    }
   }
-}
-
-const styles = StyleSheet.create({  
-  /* containers */
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  
+  const styles = StyleSheet.create({  
+    /* containers */
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
+  

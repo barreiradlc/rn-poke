@@ -10,7 +10,7 @@ export default class App extends React.Component {
   render() {
     return (
       
-        
+      <View style={styles.container}>
         <ImageBackground 
           source={fundo}
           style={styles.estiloFundo}
@@ -31,7 +31,7 @@ export default class App extends React.Component {
 
 
         </ImageBackground>
-        
+        </View>
       
     );
   }

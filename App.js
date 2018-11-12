@@ -9,7 +9,7 @@ import Search from './telas/Search';
 
 export default class App extends React.Component {
   state = {
-    currentScreen: "landing" 
+    currentScreen: "search" 
   }
   renderScreen = () => {
     if(this.state.currentScreen === "landing") {
@@ -32,7 +32,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View>
         {this.renderScreen()}
       </View>
     );
